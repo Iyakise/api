@@ -2,7 +2,7 @@ StudentPay API Documentation
 
 Base URL:
 
-http://localhost/API/
+https://api.flobby.org
 
 
 All requests should include:
@@ -16,7 +16,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 1️⃣ Signup Endpoint
 
-URL: /auth/signup.php
+URL: /auth/signup/
 Method: POST
 Description: Create a new user account and send a verification email.
 
@@ -57,7 +57,7 @@ Sends email verification link
 
 2️⃣ Login Endpoint
 
-URL: /auth/login.php
+URL: /auth/login/
 Method: POST
 Description: Login user, check if email is verified, returns JWT token.
 
@@ -96,7 +96,7 @@ Use token to access protected endpoints
 
 3️⃣ Email Verification Endpoint
 
-URL: /auth/verify.php
+URL: /auth/verify-email.php
 Method: GET
 Description: Verify user email using the token sent in the verification email.
 
@@ -123,7 +123,7 @@ After verification, user can login and receive JWT
 
 4️⃣ Check Login / JWT Validation Endpoint
 
-URL: /auth/check-login.php
+URL: /isAuthenticated.php
 Method: GET
 Description: Verify if the user is logged in by validating JWT token.
 

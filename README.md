@@ -217,4 +217,3 @@ Handle token expiry: redirect to login if 401 Unauthorized
 
 Account number is auto-generated; phone is normalized
 
-✅ This documentation can now be uploaded as a Postman collection, PDF, or GitHub README. Students can follow it to test every endpoint.
